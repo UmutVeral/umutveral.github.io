@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umut Veral's portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>   
+    <div class="logo">folio <b>.</b></div>
+    <ul class="navItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skils</a></li>
+        <li><a href="currency.html">currency</a></li>
+     </ul>
+     <div class="Links">
+      
+        <a href="https://www.linkedin.com/in/umutveral/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/umutveral" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/umutveral" target="_blank"><i class="fab fa-twitter"></i></a>
+      
+      
+     </div>
+     </nav>
+     <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>I'm <span class="multiText"></span></h1>
+            <p>Merhabalar, ben Umut VERAL. Bilgi Üniversitesi Elektrik&Elektronik Mühendisliği bölümü mezunuyum . Günlerimin çoğunu Teknoloji, bilim ve spor alanlarındaki gelişmelerinin takibi ile geçiririm. Bunların yanında da kodlamaya olan özel ilgim sebebi ile boş zamanlarımda kendimi Java ve C# konusunda eğitmeye çalışıyorum. 2019 yazında Schneider Electric de yaz stajı , 2022 Ocak döneminde Türkiye'nin en büyük sanayi tipi buzdolabı yapan Ahmet Yar Soğutma San. ve Tic. A.Ş. staj yaptım. Bunlardan geriye kalan zamanlarım da ise futbol, kayak, snooker, dart gibi sporlar yapmaya çalışıyorum. Bunların yanı sıra 12 ülkeden den fazla yurtdışı gezisi deneyimim var. </p>
+            <div class="btns">
+                <button onclick="window.open('https://tinyurl.com/42v6y5mu', '_blank');" >download CV</button>
+                <button id="whatsapp-button">  Hire Me via whatsapp</button>
+            </div>
+        </div>
+        <div class="cols cols1">
+          <div class="imgbox">
+            <img src="pics/splash.png"  id="splash">
+            <img src="pics/img.png"  >
+          </div> 
+       
+        </div>
+        
+     </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typingEffect = new Typed(".multiText",{strings :["coder","developer","engineer"],
+    loop: true,
+    typeSpeed:100,backspeed:80,
+    backDelay: 1500,
+    })
+    
+
+$(document).ready(function() {
+    $('#whatsapp-button').click(function() {
+      var phoneNumber = '905546545004'; // telefon numaranızı buraya yazın
+      var message = 'Merhaba! Size ulaşmak istiyorum.'; // göndermek istediğiniz mesajı buraya yazın
+      var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+      window.open(url, '_blank');
+    });
+  });
+  
+</script>
+</body>
+</html>
